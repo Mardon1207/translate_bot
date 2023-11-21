@@ -1,9 +1,9 @@
 from flask import Flask,request
 from telegram import Update, Bot
 from telegram.ext import CommandHandler,MessageHandler,Dispatcher,Filters
-from main import *
+from handlers import *
 
-TOKEN="5873498271:AAGbWIyvaojE9RZ7HafEVDn2zfU8CVEJ_IY"
+TOKEN='6409999814:AAFD0zQHnbSUHA4mc6QU9hCgMGKcLvCCsWQ'
 bot=Bot(token=TOKEN)
 dp=Dispatcher(bot, None, workers=0)
 

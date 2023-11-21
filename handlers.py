@@ -14,7 +14,7 @@ def tekshir(chat_id,bot,channel):
         return False
     return True
 
-bot = Bot('5873498271:AAGbWIyvaojE9RZ7HafEVDn2zfU8CVEJ_IY')
+bot = Bot('6409999814:AAFD0zQHnbSUHA4mc6QU9hCgMGKcLvCCsWQ')
 def en_uz(text):
     tr_text = GoogleTranslator(source='en',target='uz').translate(text)
     tr_text1 = GoogleTranslator(source='uz',target='en').translate(text)
@@ -307,17 +307,17 @@ def forwarding(update:Update, context:CallbackContext):
         pass
             
 
-# updater=Updater('5873498271:AAGbWIyvaojE9RZ7HafEVDn2zfU8CVEJ_IY')
+updater=Updater('6409999814:AAFD0zQHnbSUHA4mc6QU9hCgMGKcLvCCsWQ')
 
-# updater.dispatcher.add_handler(CommandHandler('start',start))
-# updater.dispatcher.add_handler(CommandHandler('uzen',uzen))
-# updater.dispatcher.add_handler(CommandHandler('enuz',enuz))
-# updater.dispatcher.add_handler(MessageHandler(Filters.reply,forwarding))
-# updater.dispatcher.add_handler(CallbackQueryHandler(adminpanel, pattern='admin'))
-# updater.dispatcher.add_handler(MessageHandler(Filters.text,translate))
-# updater.dispatcher.add_handler(CallbackQueryHandler(admin_command, pattern='command'))
-# updater.dispatcher.add_handler(CallbackQueryHandler(checking, pattern='check'))
+updater.dispatcher.add_handler(CommandHandler('start',start))
+updater.dispatcher.add_handler(CommandHandler('uzen',uzen))
+updater.dispatcher.add_handler(CommandHandler('enuz',enuz))
+updater.dispatcher.add_handler(MessageHandler(Filters.reply,forwarding))
+updater.dispatcher.add_handler(CallbackQueryHandler(adminpanel, pattern='admin'))
+updater.dispatcher.add_handler(MessageHandler(Filters.text,translate))
+updater.dispatcher.add_handler(CallbackQueryHandler(admin_command, pattern='command'))
+updater.dispatcher.add_handler(CallbackQueryHandler(checking, pattern='check'))
 
 
-# updater.start_polling()
-# updater.idle()
+updater.start_polling()
+updater.idle()
