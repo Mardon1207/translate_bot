@@ -2,16 +2,12 @@
     "users": {
         "5032606464": "en-uz"
     },
-    "groups": [
-        
-    ],
-    "channels": [
-        
-    ],
+    "groups": [],
+    "channels": [],
     "admins": {
         "5032606464": {
             "fwdmsg": false,
-            "msg": true,
+            "msg": false,
             "addd": false,
             "removed": false,
             "addc": false,

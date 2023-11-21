@@ -222,6 +222,7 @@ def admin_command(update:Update, context:CallbackContext):
         if command == 'sendmsg':
             db.rmsg(chat_id,True)
             bot.send_message(chat_id=chat_id, text='Barcha foydalanuvchilarga yuborish uchun text xabar yozing')
+            db.rmsg(chat_id,False)
         elif command == 'addadmin':
             db.changer(chat_id,'addd',True)
             bot.send_message(chat_id=chat_id, text="Yangi admin qo'shish uchun user_idisini quyidagicha kiriting:\n\nadmin+user_id")
