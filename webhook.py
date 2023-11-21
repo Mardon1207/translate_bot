@@ -1,6 +1,6 @@
 from telegram import Bot
 
-TOKEN="5873498271:AAGbWIyvaojE9RZ7HafEVDn2zfU8CVEJ_IY"
+TOKEN="6409999814:AAFD0zQHnbSUHA4mc6QU9hCgMGKcLvCCsWQ"
 
 bot = Bot(token=TOKEN)
 
@@ -13,7 +13,7 @@ def delete():
 
 
 def set():
-    url = 'https://translatebot.pythonanywhere.com/webhook'
+    url = 'http://127.0.0.1:5000/webhook'
     print(bot.set_webhook(url=url))
 
 set()
