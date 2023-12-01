@@ -13,7 +13,7 @@ def delete():
 
 
 def set():
-    url = 'https://translatebot.pythonanywhere.com/webhook'
+    url = 'https://shaxzod03.pythonanywhere.com/webhook'
     print(bot.set_webhook(url=url))
 
 set()
