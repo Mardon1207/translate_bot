@@ -1,7 +1,11 @@
+
+    
 from flask import Flask,request
 from telegram import Update, Bot
 from telegram.ext import CommandHandler,MessageHandler,Dispatcher,Filters,CallbackQueryHandler
 from handlers import (start, enuz,forwarding,uzen,adminpanel,translate,admin_command,checking)
+
+
 
 TOKEN='6409999814:AAFD0zQHnbSUHA4mc6QU9hCgMGKcLvCCsWQ'
 bot=Bot(token=TOKEN)
@@ -9,7 +13,7 @@ dp=Dispatcher(bot, None, workers=0)
 
 
 app=Flask(__name__)
-@app.route("/webhook",methods=["GET","POST"])
+@app.route("/",methods=["GET","POST"])
 def main():
     if request.method=="GET":
         return "runing"
