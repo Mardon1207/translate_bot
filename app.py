@@ -13,7 +13,7 @@ dp=Dispatcher(bot, None, workers=0)
 
 
 app=Flask(__name__)
-@app.route("/",methods=["GET","POST"])
+@app.route("",methods=["GET","POST"])
 def main():
     if request.method=="GET":
         return "runing"
