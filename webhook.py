@@ -1,6 +1,6 @@
 from telegram import Bot
 
-TOKEN="6433158894:AAHJfMA9JLUOHT5C-AVvZS0UQGUJNVUEFhs"
+TOKEN="6031625012:AAFdxBk9YBo_m2U4llpFUk854ZoLXTPWSZ0"
 
 bot = Bot(token=TOKEN)
 
@@ -13,6 +13,6 @@ def delete():
 
 delete()
 def set():
-    url = 'https://shaxzod03.pythonanywhere.com/webhook'
+    url = 'https://Mardon12.pythonanywhere.com/webhook'
     print(bot.set_webhook(url=url))
 

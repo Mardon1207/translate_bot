@@ -3,7 +3,7 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler,MessageHandler,Dispatcher,Filters,CallbackQueryHandler
 from handlers import (start, enuz,forwarding,uzen,adminpanel,translate,admin_command,checking)
 
-TOKEN='6433158894:AAHJfMA9JLUOHT5C-AVvZS0UQGUJNVUEFhs'
+TOKEN='6031625012:AAFdxBk9YBo_m2U4llpFUk854ZoLXTPWSZ0'
 bot=Bot(token=TOKEN)
 dp=Dispatcher(bot, None, workers=0)
 

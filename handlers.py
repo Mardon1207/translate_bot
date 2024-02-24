@@ -14,7 +14,7 @@ def tekshir(chat_id,bot,channel):
         return False
     return True
 
-bot = Bot('6433158894:AAHJfMA9JLUOHT5C-AVvZS0UQGUJNVUEFhs')
+bot = Bot('6031625012:AAFdxBk9YBo_m2U4llpFUk854ZoLXTPWSZ0')
 def en_uz(text):
     tr_text = GoogleTranslator(source='en',target='uz').translate(text)
     tr_text1 = GoogleTranslator(source='uz',target='en').translate(text)
@@ -307,7 +307,7 @@ def forwarding(update:Update, context:CallbackContext):
         pass
             
 
-updater=Updater('6433158894:AAHJfMA9JLUOHT5C-AVvZS0UQGUJNVUEFhs')
+updater=Updater('6031625012:AAFdxBk9YBo_m2U4llpFUk854ZoLXTPWSZ0')
 
 updater.dispatcher.add_handler(CommandHandler('start',start))
 updater.dispatcher.add_handler(CommandHandler('uzen',uzen))
