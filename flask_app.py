@@ -23,6 +23,7 @@ def main():
         dp.add_handler(MessageHandler(Filters.text,translate))
         dp.add_handler(CallbackQueryHandler(admin_command, pattern='command'))
         dp.add_handler(CallbackQueryHandler(checking, pattern='check'))
+
         dp.process_update(update)
 
         return {"message","ok"}
