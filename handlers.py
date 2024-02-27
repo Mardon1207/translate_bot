@@ -306,18 +306,3 @@ def forwarding(update:Update, context:CallbackContext):
     except:
         pass
             
-
-updater=Updater('6031625012:AAFdxBk9YBo_m2U4llpFUk854ZoLXTPWSZ0')
-
-updater.dispatcher.add_handler(CommandHandler('start',start))
-updater.dispatcher.add_handler(CommandHandler('uzen',uzen))
-updater.dispatcher.add_handler(CommandHandler('enuz',enuz))
-updater.dispatcher.add_handler(MessageHandler(Filters.reply,forwarding))
-updater.dispatcher.add_handler(CallbackQueryHandler(adminpanel, pattern='admin'))
-updater.dispatcher.add_handler(MessageHandler(Filters.text,translate))
-updater.dispatcher.add_handler(CallbackQueryHandler(admin_command, pattern='command'))
-updater.dispatcher.add_handler(CallbackQueryHandler(checking, pattern='check'))
-
-
-updater.start_polling()
-updater.idle()
