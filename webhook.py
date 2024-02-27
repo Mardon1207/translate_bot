@@ -16,3 +16,4 @@ def set():
     url = 'https://mardon12.pythonanywhere.com/webhook'
     print(bot.set_webhook(url=url))
 
+set()
